@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-29T17:28:38.017Z",
+        "before": [
+          {
+            "result": {
+              "duration": 368200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To validate flights functionality of flights skyscanner application",
+        "description": "",
+        "id": "to-validate-flight-functionality-of-skyscanner-application;to-validate-flights-functionality-of-flights-skyscanner-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 809822200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15521937600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user should be skyscanner page",
+            "match": {
+              "location": "Flights.the_user_should_be_skyscanner_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5176952400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user has to click one way button",
+            "match": {
+              "location": "Flights.the_user_has_to_click_one_way_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 339775300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user should be enter \"chennai\" and \"madirai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chennai\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"madirai\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Flights.the_user_should_be_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 502497300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be provide depart and return",
+            "match": {
+              "location": "Flights.the_user_should_be_provide_depart_and_return()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291098600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user has to click cabin class and increase adult count",
+            "match": {
+              "location": "Flights.the_user_has_to_click_cabin_class_and_increase_adult_count()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85480800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user has to click  direct flight only",
+            "match": {
+              "location": "Flights.the_user_has_to_click_direct_flight_only()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate flight functionality of skyscanner application",
+    "description": "",
+    "id": "to-validate-flight-functionality-of-skyscanner-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/skyScannerFlight.feature",
+    "tags": []
+  }
+]
