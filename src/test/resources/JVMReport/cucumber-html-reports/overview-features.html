@@ -84,7 +84,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Sky Scanner</td>
-      <td>29 Apr 2022, 22:59</td>
+      <td>29 Apr 2022, 23:25</td>
     </tr>
   </tbody>
 </table>
@@ -106,12 +106,12 @@ $(document).ready(function() {
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="message">
-        <pre>net.masterthought.cucumber.ValidationException: File 'src\\test\\resources\\report\\JVMReport.json' is not proper Cucumber report!
-	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:100)
-	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:69)
-	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:88)
+        <pre>net.masterthought.cucumber.ValidationException: File 'src\test\resources\report\JVMReport.json' is not proper Cucumber report!
+	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:104)
+	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:72)
+	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:97)
 	at org.report.JVMReport.generationJVMReport(JVMReport.java:20)
-	at org.runner.TestRunner.Report(TestRunner.java:30)
+	at org.runner.TestRunner.Report(TestRunner.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -138,20 +138,12 @@ $(document).ready(function() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
- at [Source: (InputStreamReader); line: 1, column: 0]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4344)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4189)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3218)
-	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:91)
-	... 30 more
 </pre>
       </div>
       <div>Trying to generate report from following files. Make sure they are valid cucumber report files:</div>
       <div class="error-files">
         <pre>
- src\\test\\resources\\report\\JVMReport.json
+ src\test\resources\report\JVMReport.json
         </pre>
       </div>
     </div>

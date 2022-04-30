@@ -26,7 +26,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	}
 	@AfterClass
 	public static void Report() {
-		JVMReport.generationJVMReport("src\\\\test\\\\resources\\\\report\\\\JVMReport.json");
+		JVMReport.generationJVMReport("src\\test\\resources\\report\\JVMReport.json");
 		System.out.println("========report done===========");
 
 	}
